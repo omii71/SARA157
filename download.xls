@@ -1,0 +1,673 @@
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:x='urn:schemas-microsoft-com:office:excel' xmlns='http://www.w3.org/TR/REC-html40'><head><meta http-equiv="Content-type" content="text/html;charset=utf-8" /><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>Payment Status</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><div class='table-responsive' id='bpStateTable'>
+									<table class='table table-bordered'>
+										<thead>
+											<!-- ngIf: finYear!=null --><tr data-ng-if='finYear!=null' class='ng-scope'>
+												<th colspan='15' class='text-center ng-binding' style='display: none;'>Financial Year : 2024-2025</th>
+											</tr><!-- end ngIf: finYear!=null -->
+											<!-- ngIf: stateIdName!=null -->
+											<!-- ngIf: schemeName!=null -->
+											<tr>
+												<th colspan='15' class='text-center ng-binding' style='display: none;'>Block Panchayat And Equivalent Level</th>
+											</tr>
+											<tr></tr>
+											<tr> 
+												<th></th>
+												<th></th>
+												<th colspan='13' class='text-center' style='vertical-align: top;'>Total Number</th>
+											</tr>
+											<tr>
+												<th class='text-center' style='vertical-align: top;'>S.No.</th>
+												<th class='text-center' style='vertical-align: top;'>State Name</th>
+												<th class='text-center' style='vertical-align: top;'>Block Panchayat and Equivalent</th>
+												<th class='text-center' style='vertical-align: top;'>Block Panchayat onboard (eGS - PFMS)</th>
+								     			<th class='text-center' style='vertical-align: top;'>Block Panchayats &amp; Equivalent With Online Payment</th>
+								     			<th class='text-center' style='vertical-align: top;'>Payment Vouchers Initiated</th>
+									     		<th class='text-center' style='vertical-align: top;'>Payment Vouchers Approved</th>
+								     			<th class='text-center' style='vertical-align: top;'>Payment Vouchers Pending at PFMS</th>
+								     			<th class='text-center' style='vertical-align: top;'>Payment Vouchers Pending at Bank</th>
+								     			<th class='text-center' style='vertical-align: top;'>Payment Vouchers Rejected</th>
+								     			<th class='text-center' style='vertical-align: top;'>Payment Initiated<br>(in Cr.)</th>
+								     			<th class='text-center' style='vertical-align: top;'>Payment Approved<br>(in Cr.)</th>
+								     			<th class='text-center' style='vertical-align: top;'>Payment Pending at PFMS<br>(in Cr.)</th>
+								     			<th class='text-center' style='vertical-align: top;'>Payment Pending at Bank<br>(in Cr.)</th>
+								     			<th class='text-center' style='vertical-align: top;'>Payment Rejected<br>(in Cr.)</th>
+											</tr>	
+										</thead>
+										<tbody>
+											<!-- ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>1</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 --><td class='link ng-binding ng-scope' data-ng-click='onBpDetails(d.code, d.name)' data-ng-bind='d.name' data-ng-if='d.onboardpfms != 0'>ANDHRA PRADESH</td><!-- end ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>660</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>660</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>645</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>27991</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>27654</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>337</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>285.659</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>282.093</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.000</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>3.567</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>2</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --><td data-ng-bind='d.name' data-ng-if='d.onboardpfms == 0' class='ng-binding ng-scope'>ARUNACHAL PRADESH</td><!-- end ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.000</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>0.000</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>3</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 --><td class='link ng-binding ng-scope' data-ng-click='onBpDetails(d.code, d.name)' data-ng-bind='d.name' data-ng-if='d.onboardpfms != 0'>ASSAM</td><!-- end ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>191</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>191</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>191</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>8516</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>8142</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>1</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>373</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>84.210</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>80.560</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.108</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>3.542</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>4</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 --><td class='link ng-binding ng-scope' data-ng-click='onBpDetails(d.code, d.name)' data-ng-bind='d.name' data-ng-if='d.onboardpfms != 0'>BIHAR</td><!-- end ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>534</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>534</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>531</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>130743</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>128882</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>1861</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>606.959</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>597.314</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.000</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>9.645</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>5</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 --><td class='link ng-binding ng-scope' data-ng-click='onBpDetails(d.code, d.name)' data-ng-bind='d.name' data-ng-if='d.onboardpfms != 0'>CHHATTISGARH</td><!-- end ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>146</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>146</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>146</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>24406</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>23945</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>461</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>205.526</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>200.862</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.000</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>4.664</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>6</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --><td data-ng-bind='d.name' data-ng-if='d.onboardpfms == 0' class='ng-binding ng-scope'>GOA</td><!-- end ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.000</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>0.000</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>7</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 --><td class='link ng-binding ng-scope' data-ng-click='onBpDetails(d.code, d.name)' data-ng-bind='d.name' data-ng-if='d.onboardpfms != 0'>GUJARAT</td><!-- end ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>248</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>248</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>248</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>41405</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>41061</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>344</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>471.619</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>465.944</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.000</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>5.675</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>8</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 --><td class='link ng-binding ng-scope' data-ng-click='onBpDetails(d.code, d.name)' data-ng-bind='d.name' data-ng-if='d.onboardpfms != 0'>HARYANA</td><!-- end ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>143</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>143</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>134</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>14532</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>13931</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>601</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>242.366</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>231.861</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.000</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>10.504</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>9</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 --><td class='link ng-binding ng-scope' data-ng-click='onBpDetails(d.code, d.name)' data-ng-bind='d.name' data-ng-if='d.onboardpfms != 0'>HIMACHAL PRADESH</td><!-- end ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>81</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>81</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>81</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>12164</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>12091</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>1</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>72</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>50.557</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>50.324</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.010</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>0.223</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>10</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --><td data-ng-bind='d.name' data-ng-if='d.onboardpfms == 0' class='ng-binding ng-scope'>JAMMU AND KASHMIR</td><!-- end ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>285</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.000</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>0.000</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>11</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 --><td class='link ng-binding ng-scope' data-ng-click='onBpDetails(d.code, d.name)' data-ng-bind='d.name' data-ng-if='d.onboardpfms != 0'>JHARKHAND</td><!-- end ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>264</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>264</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>263</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>30813</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>30263</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>550</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>196.857</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>193.203</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.000</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>3.654</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>12</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 --><td class='link ng-binding ng-scope' data-ng-click='onBpDetails(d.code, d.name)' data-ng-bind='d.name' data-ng-if='d.onboardpfms != 0'>KARNATAKA</td><!-- end ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>238</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>232</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>127</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>852</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>815</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>37</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>16.520</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>15.820</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.000</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>0.700</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>13</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 --><td class='link ng-binding ng-scope' data-ng-click='onBpDetails(d.code, d.name)' data-ng-bind='d.name' data-ng-if='d.onboardpfms != 0'>KERALA</td><!-- end ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>152</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>152</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>152</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>7914</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>7813</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>101</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>171.626</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>168.692</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.000</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>2.935</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>14</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --><td data-ng-bind='d.name' data-ng-if='d.onboardpfms == 0' class='ng-binding ng-scope'>LADAKH</td><!-- end ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>31</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.000</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>0.000</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>15</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 --><td class='link ng-binding ng-scope' data-ng-click='onBpDetails(d.code, d.name)' data-ng-bind='d.name' data-ng-if='d.onboardpfms != 0'>MADHYA PRADESH</td><!-- end ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>313</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>313</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>311</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>12399</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>12236</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>163</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>247.414</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>243.590</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.000</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>3.825</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>16</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 --><td class='link ng-binding ng-scope' data-ng-click='onBpDetails(d.code, d.name)' data-ng-bind='d.name' data-ng-if='d.onboardpfms != 0'>MAHARASHTRA</td><!-- end ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>351</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>351</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>312</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>13259</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>13138</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>121</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>145.369</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>143.971</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.000</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>1.398</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>17</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --><td data-ng-bind='d.name' data-ng-if='d.onboardpfms == 0' class='ng-binding ng-scope'>MANIPUR</td><!-- end ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.000</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>0.000</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>18</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --><td data-ng-bind='d.name' data-ng-if='d.onboardpfms == 0' class='ng-binding ng-scope'>MEGHALAYA</td><!-- end ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>2241</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.000</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>0.000</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>19</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --><td data-ng-bind='d.name' data-ng-if='d.onboardpfms == 0' class='ng-binding ng-scope'>MIZORAM</td><!-- end ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.000</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>0.000</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>20</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --><td data-ng-bind='d.name' data-ng-if='d.onboardpfms == 0' class='ng-binding ng-scope'>NAGALAND</td><!-- end ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.000</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>0.000</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>21</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 --><td class='link ng-binding ng-scope' data-ng-click='onBpDetails(d.code, d.name)' data-ng-bind='d.name' data-ng-if='d.onboardpfms != 0'>ODISHA</td><!-- end ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>314</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>314</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>314</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>37987</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>37603</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>384</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>415.584</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>411.378</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.000</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>4.205</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>22</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 --><td class='link ng-binding ng-scope' data-ng-click='onBpDetails(d.code, d.name)' data-ng-bind='d.name' data-ng-if='d.onboardpfms != 0'>PUNJAB</td><!-- end ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>153</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>151</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>123</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>5785</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>5482</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>303</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>151.989</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>147.626</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.000</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>4.363</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>23</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 --><td class='link ng-binding ng-scope' data-ng-click='onBpDetails(d.code, d.name)' data-ng-bind='d.name' data-ng-if='d.onboardpfms != 0'>RAJASTHAN</td><!-- end ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>361</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>353</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>351</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>35320</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>34757</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>1</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>3</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>559</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>600.576</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>592.841</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.040</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.027</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>7.667</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>24</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --><td data-ng-bind='d.name' data-ng-if='d.onboardpfms == 0' class='ng-binding ng-scope'>SIKKIM</td><!-- end ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.000</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>0.000</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>25</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 --><td class='link ng-binding ng-scope' data-ng-click='onBpDetails(d.code, d.name)' data-ng-bind='d.name' data-ng-if='d.onboardpfms != 0'>TAMIL NADU</td><!-- end ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>388</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>388</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>388</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>45800</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>45314</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>486</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>596.717</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>589.782</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.000</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>6.935</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>26</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 --><td class='link ng-binding ng-scope' data-ng-click='onBpDetails(d.code, d.name)' data-ng-bind='d.name' data-ng-if='d.onboardpfms != 0'>TELANGANA</td><!-- end ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>572</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>540</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>514</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>9091</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>8939</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>152</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>66.748</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>65.867</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.000</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>0.881</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>27</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 --><td class='link ng-binding ng-scope' data-ng-click='onBpDetails(d.code, d.name)' data-ng-bind='d.name' data-ng-if='d.onboardpfms != 0'>TRIPURA</td><!-- end ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>75</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>75</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>75</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>12750</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>12690</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>60</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>51.153</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>50.840</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.000</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>0.313</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>28</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 --><td class='link ng-binding ng-scope' data-ng-click='onBpDetails(d.code, d.name)' data-ng-bind='d.name' data-ng-if='d.onboardpfms != 0'>UTTARAKHAND</td><!-- end ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>95</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>95</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>95</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>70561</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>69432</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>6</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>1123</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>201.568</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>198.486</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.008</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>3.074</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>29</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 --><td class='link ng-binding ng-scope' data-ng-click='onBpDetails(d.code, d.name)' data-ng-bind='d.name' data-ng-if='d.onboardpfms != 0'>UTTAR PRADESH</td><!-- end ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>826</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>826</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>823</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>287105</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>281665</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>0</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>5440</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>3016.566</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>2962.423</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.000</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>54.143</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details --><tr data-ng-repeat='d in details' class='ng-scope'>
+		                                       <td class='ng-binding'>30</td>
+		                                      <!--  <td class='link' data-ng-click='onZP(d.code, d.name)' data-ng-bind='d.name' 
+		                                      ></td> -->
+		                                        <!-- ngIf: d.onboardpfms == 0 --> 
+		                                        <!-- ngIf: d.onboardpfms != 0 --><td class='link ng-binding ng-scope' data-ng-click='onBpDetails(d.code, d.name)' data-ng-bind='d.name' data-ng-if='d.onboardpfms != 0'>WEST BENGAL</td><!-- end ngIf: d.onboardpfms != 0 -->
+		                                       <td class='text-right ng-binding' data-ng-bind='d.tot'>345</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.onboardpfms'>345</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalOnlinePriPv'>345</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.totalpayinit'>75306</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.paymentapp'>74936</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payPendingPfms'>0</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.paypending'>5</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.payrejected'>365</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.initiatedAmount'>665.949</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.approvedAmount'>661.116</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.amountPendingPfms'>0.000</td>
+		                                       <td class='text-right ng-binding' data-ng-bind='d.pendingAmount'>0.007</td>
+	   	                                       <td class='text-right ng-binding' data-ng-bind='d.rejectAmount'>4.826</td>
+	   	                                        
+		                                    </tr><!-- end ngRepeat: d in details -->
+		                                    <!-- ngIf: loader == true -->
+		                                    <tr>
+		                                       <td colspan='2' style='font-weight:bold'>Total Count</td>
+		                                       <td class='text-right ng-binding' style='font-weight:bold' data-ng-bind='sumTot'>9007</td>
+		                                       <td class='text-right ng-binding' style='font-weight:bold' data-ng-bind='sumOnboardPFMS'>6402</td>
+		                                       <td class='text-right ng-binding' style='font-weight:bold' data-ng-bind='sumTotalOnlinePriPv'>6169</td>
+		                                       <td class='text-right ng-binding' style='font-weight:bold' data-ng-bind='sumTotalpayinit'>904699</td>
+		                                       <td class='text-right ng-binding' style='font-weight:bold' data-ng-bind='sumPaymentapp'>890789</td>
+		                                       <td class='text-right ng-binding' style='font-weight:bold' data-ng-bind='sumPayPendingPfms'>1</td>
+		                                       <td class='text-right ng-binding' style='font-weight:bold' data-ng-bind='sumPaypending'>16</td>
+		                                       <td class='text-right ng-binding' style='font-weight:bold' data-ng-bind='sumPayrejected'>13893</td>
+		                                       <td class='text-right ng-binding' style='font-weight:bold' data-ng-bind='sumInitiatedAmount'>8491.532</td>
+		                                       <td class='text-right ng-binding' style='font-weight:bold' data-ng-bind='sumApprovedAmount'>8354.593</td>
+		                                       <td class='text-right ng-binding' style='font-weight:bold' data-ng-bind='sumAmountPendingPfms'>0.040</td>
+		                                       <td class='text-right ng-binding' style='font-weight:bold' data-ng-bind='sumPendingAmount'>0.160</td>
+		                                       <td class='text-right ng-binding' style='font-weight:bold' data-ng-bind='sumRejectAmount'>136.739</td>
+		                                    </tr>
+										</tbody>
+										<!-- ngIf: loader == false --><tfoot data-ng-if='loader == false' class='ng-scope'>
+											<tr>
+												<td colspan='15' class='text-center' style='border: none;font-size:10%;'>&nbsp; <br>
+														
+											</td></tr>
+											<tr>
+												<th colspan='15' class='text-center ng-binding' style='border: none;font-size:80%;'>Report generated through eGramSwaraj (http://egramswaraj.gov.in) on Wednesday,May 07, 2025 01:18 AM</th>
+											</tr>
+											
+											<tr>
+												<th colspan='15' class='text-center' style='border: none;font-size:100%;'>Note : This Report populate the data related to payment done to vendors through Online Payment Mode i.e. PFMS</th>
+											</tr>
+											<tr>
+												<th colspan='15' class='text-center' style='display: none;font-size:80%;'>Designed &amp; Developed by Panchayat Informatics Division, National Informatics Centre</th>
+											</tr>
+										</tfoot><!-- end ngIf: loader == false -->
+									</table>
+								</div></body></html>
